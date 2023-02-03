@@ -1,0 +1,16 @@
+.nav-container{
+    width: 100vw;
+    height: var(--nav-height);
+    background-color: var(--nav-background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.nav-container > a {
+    
+    color: var(--nav-text-color);
+    font-size: var(--nav-logo-size);
+}
+

@@ -1,0 +1,9 @@
+footer{
+    width: 100vw;
+    height: var(--nav-height);
+    background-color: var(--nav-background-color);
+    color: var(--nav-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

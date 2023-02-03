@@ -1,4 +1,12 @@
-@import "../colors.css";
-@import "./nav.css";
+@import "../assets.css";
+@import "../nav.css";
 @import "./main.css";
-@import "./foouter.css"
+@import "../footer.css";
+
+.home-container{
+    width: 100vw;
+    background-color: var(--background-color);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}

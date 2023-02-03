@@ -1,5 +1,80 @@
 
-div {
-    font-size: 40px;
-    color: var(--acc-c1);
+.home-main-container{
+    width: 100vw;
+ 
+}
+
+
+.home-main-text-container{
+    height: calc(100vh - var(--nav-height));
+    padding: 100px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.home-main-text-container > div:first-child{
+    font-size: 96px;
+}
+.home-main-text-container > div:last-child{
+    width: 50vw;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.home-main-tools-container{
+    background-color: black;
+    color: var(--text-basicD-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+    gap: 30px;
+
+}
+.home-tool-wrapper{
+    flex: 1;
+    position: relative;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 30px;
+    transition: 0.3s ease-in-out;
+}
+
+.home-tool-wrapper::after{
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.home-tool-wrapper:hover{
+    background-color: white;
+}
+
+
+.home-tool-box{
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.3s ease-in-out;
+}
+
+.home-tool-wrapper:hover .home-tool-box{
+    color: black;
+}
+
+.home-tool-wrapper > div > i:first-child{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.home-tool-wrapper > div > div:last-child{
+    font-size: 50px;
 }
