@@ -78,3 +78,7 @@
 .home-tool-wrapper > div > div:last-child{
     font-size: 50px;
 }
+
+.an-home-overflow{
+    overflow: hidden;
+}
