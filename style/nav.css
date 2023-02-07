@@ -7,6 +7,7 @@
     justify-content: start;
     position: relative;
     padding: 0 50px;
+    
 }
 
 .nav-container2{
@@ -18,8 +19,15 @@
     justify-content: start;
     position: relative;
     padding: 0 50px;
+
+
 }
 
+.navA{
+    color: var(--nav-text-color);
+    font-size: var(--nav-logo-size);
+    text-transform: uppercase;
+}
 .nav-container > a {
     
     color: var(--nav-text-color);
