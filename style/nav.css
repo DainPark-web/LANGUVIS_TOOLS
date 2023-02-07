@@ -4,11 +4,28 @@
     background-color: var(--nav-background-color);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     position: relative;
+    padding: 0 50px;
+}
+
+.nav-container2{
+    width: 100vw;
+    height: var(--nav-height);
+    background-color: var(--nav-background-color);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    position: relative;
+    padding: 0 50px;
 }
 
 .nav-container > a {
+    
+    color: var(--nav-text-color);
+    font-size: var(--nav-logo-size);
+}
+.nav-container2 > a {
     
     color: var(--nav-text-color);
     font-size: var(--nav-logo-size);
