@@ -6,6 +6,9 @@ const textL = document.querySelector("#tool-result-textL");
 const wordL = document.querySelector("#tool-result-wordL")
 const senL = document.querySelector("#tool-result-senL")
 
+
+const textResult = document.querySelector(".tool-result-text");
+
 function createCharacter(text) {
   const getTextLength = text.split("").filter((e) => {
     if (e !== " ") {
@@ -53,6 +56,7 @@ textAreaBtn.addEventListener("click", (e) => {
     const chLength = createCharacter(textArea.value);
     const wordsLength = createWord(textArea.value);
     const senLength = createSentence(textArea.value);
+    textResult.innerHTML = textArea.value;
     textL.innerHTML = chLength;
     wordL.innerHTML = wordsLength;
     senL.innerHTML = senLength;
