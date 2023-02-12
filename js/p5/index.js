@@ -61,14 +61,14 @@ let HEIGHT = canvasContainer.clientHeight;
 
 let time = 0;
 
-const textCount = 70;
+const textCount = 50;
 let textList = [];
 
 function setup(){
     const cnv = createCanvas(WIDTH, HEIGHT);
     cnv.parent(canvasContainer);
     textFont("Source Code Pro");
-    textSize(20)
+    // textSize(20)
   
     
     // strokeWeight(3);
