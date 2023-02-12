@@ -5,7 +5,7 @@
 
 .home-container{
     width: 100vw;
-    background-color: var(--background-color);
+    background-color: black;
     overflow: hidden;
     display: flex;
     flex-direction: column;

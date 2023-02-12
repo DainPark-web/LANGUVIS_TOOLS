@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+  
 }
 
 li{
@@ -18,4 +18,5 @@ a{
 body{
     background-color: var(--text-c1);
     font-family: 'Open Sans', sans-serif;
+    background-color: black;
 }
