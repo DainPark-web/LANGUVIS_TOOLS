@@ -59,6 +59,15 @@ const randomWords = [
 let WIDTH = canvasContainer.clientWidth;
 let HEIGHT = canvasContainer.clientHeight;
 
+const colors = [
+    "#4c69a4",
+    "#cd4b4a",
+    "#67b0a7",
+    "#edd189",
+    "#35464d",
+    "#D90B6B"
+]
+
 let time = 0;
 
 const textCount = 50;
@@ -87,7 +96,7 @@ function setup(){
 
 function draw(){
     time += 0.5;
-    background(0)
+    background(10,10,10)
    
     for(let i = 0; i < textCount; i++){
         textList[i].draw();
@@ -96,8 +105,30 @@ function draw(){
         strokeWeight(1)
         stroke(255,255,255,100)
         for(let j = 0; j < textCount; j++){
-             if(dist(textList[i].x, textList[i].y, textList[j].x, textList[j].y) < 150){
+            const d = dist(textList[i].x, textList[i].y, textList[j].x, textList[j].y)
+             if(d < 150){
                 push()
+              
+              
+                if(d > 130){
+                    stroke(colors[0])
+                }
+              
+                if(d <= 130 && d > 100){
+                    stroke(colors[1])
+                }
+                if(d <= 100 && d > 60){
+                    stroke(colors[2])
+                }
+                if(d <= 60 && d > 30){
+                    stroke(colors[3])
+                }
+                if(d <= 30 && d > 0){
+                    stroke(colors[4])
+                }
+
+             
+              
                 line(textList[i].x, textList[i].y,textList[j].x, textList[j].y)
                 pop()
             }

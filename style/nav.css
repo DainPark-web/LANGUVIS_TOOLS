@@ -4,11 +4,15 @@
     background-color: var(--nav-background-color);
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: space-between;
     position: relative;
     padding: 0 50px;
+    font-weight: 600;
+    text-transform: uppercase;
     
 }
+
+
 
 .nav-container2{
     width: 100vw;
@@ -19,6 +23,7 @@
     justify-content: start;
     position: relative;
     padding: 0 50px;
+    font-weight: 600;
 
 
 }
@@ -27,6 +32,7 @@
     color: var(--nav-text-color);
     font-size: var(--nav-logo-size);
     text-transform: uppercase;
+    font-weight: 600;
 }
 .nav-container > a {
     
@@ -37,5 +43,13 @@
     
     color: var(--nav-text-color);
     font-size: var(--nav-logo-size);
+}
+
+.navB{
+    color: var(--nav-text-color);
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+
 }
 

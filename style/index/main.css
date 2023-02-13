@@ -1,7 +1,7 @@
 
 .home-main-container{
     width: 100vw;
-    background-color: black;
+    background-color: var(--home-background);
 }
 
 
@@ -12,12 +12,16 @@
     flex-direction: column;
     justify-content: space-between;
     position: relative;
-    background-color: black;
+    background-color: var(--home-background);
     color: white;
 }
 
 .home-title{
-    letter-spacing: 10px;
+    letter-spacing: 3px;
+    font-size: 110px;
+    line-height: 1.2;
+    user-select: none;
+    font-weight: 600;
 }
 .canvasContainer{
     width: 100%;
@@ -28,21 +32,23 @@
     left: 0;;
 }
 
-.home-title-container{
-    font-size: 110px;
-    line-height: 1.2;
-    user-select: none;
-}
+
 .home-main-text-container > div:last-child{
-    width: 40vw;
-    font-size: 22px;
+    min-width: 400px;
+    max-width: 500px;
+    width: 100%;
+    font-size: 18px;
     display: flex;
     flex-direction: column;
     gap: 30px;
+    color: rgba(255,255,255,0.9);
+    line-height: 1.5;
+    letter-spacing: 0.8px;
+
 }
 
 .home-main-tools-container{
-    background-color: black;
+    background-color: var(--home-background);
     color: var(--text-basicD-color);
     display: flex;
     justify-content: space-between;
@@ -54,7 +60,7 @@
 .home-tool-wrapper{
     flex: 1;
     position: relative;
-    background-color: black;
+    background-color: var(--home-background);
     border: 2px solid white;
     border-radius: 30px;
     transition: 0.3s ease-in-out;
@@ -85,15 +91,17 @@
 }
 
 .home-tool-wrapper:hover .home-tool-box{
-    color: black;
+    color: var(--home-background);
 }
 
 .home-tool-wrapper > div > i:first-child{
-    font-size: 30px;
-    margin-bottom: 10px;
+    font-size: 80px;
+    margin-bottom: 30px;
+
 }
 .home-tool-wrapper > div > div:last-child{
-    font-size: 50px;
+    font-size: 30px;
+    font-weight: 600;
 }
 
 .an-home-overflow{

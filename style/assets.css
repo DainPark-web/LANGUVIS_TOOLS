@@ -1,13 +1,14 @@
 :root {
     /* colors */
     --background-color: rgb(255,255,255);
+    --home-background: rgb(10,10,10);
     --text-basic-color: rgb(255,255,255);
     --text-basicD-color: rgb(255,255,255);
     --nav-text-color: rgb(255,255,255);
-    --nav-background-color: rgb(0,0,0);
+    --nav-background-color: rgb(10,10,10);
     
     /* font sizes */
-    --nav-logo-size: 30px;
+    --nav-logo-size: 23px;
 
 
     /* element sizes */
