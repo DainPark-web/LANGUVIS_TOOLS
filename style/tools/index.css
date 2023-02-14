@@ -1,10 +1,12 @@
 .tool-container{
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     color: white;
     padding-top: 100px;
     padding-left: 100px;
     padding-right: 100px;
+    padding-bottom: 50px;
+
 }
 
 
@@ -86,9 +88,17 @@
 
 }
 
-/* #tool1-button-wrapper > span{
-    padding: 10px 40px;
-    border: 4px solid white;
-    font-size: 30px;
-    cursor: pointer;
-} */
+.tool-01-resultContainer{
+    margin-top: 50px;
+}
+
+.tool-result-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin-bottom: 30px;
+}
+.tool-result-boxSub {
+    display: flex;
+    gap: 10px;
+}
