@@ -1,26 +1,50 @@
+.tool-container{
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+
+.tool-main-title{
+    text-align: center;
+    padding: 50px;
+    font-size: 50px;
+    text-transform: uppercase;
+    user-select: none;
+}
+
 .tool-textArea{
     display: block;
     width: 100%;
-
     resize: none;
-
-    min-height: 10vw;
+    min-height: 25vw;
     padding: 20px;
-    border: 4px solid black;
-
+    border: 3px solid white;
     font-family: inherit;
     font-size: inherit;
     margin-bottom: 30px;
+    background-color: var(--background-color);
+    color: white;
 
+}
+
+.tool-textArea::placeholder{
+    color: white;
+    opacity: 0.5;
 }
 .tool-result{
     width: 100%;
-    min-height: 30vw;
+    min-height: 25vw;
     padding: 20px;
-    border: 4px solid black;
+    border: 3px solid white;
     margin-bottom: 30px;
     display: none;
     flex-direction: column;
+    overflow: scroll;
 }
 .tool-result-text{
     width: 100%;
@@ -38,7 +62,7 @@
 }
 
 .tool-result-wrapper > div{
-    border-left: 4px solid black;
+    border-left: 3px solid white;
     padding: 10px 20px;
     flex: 1;
 
@@ -54,11 +78,17 @@
     width: 100%;
     display: flex;
     justify-content: end;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 20px;
+
 }
 
-#tool1-button-wrapper > span{
+/* #tool1-button-wrapper > span{
     padding: 10px 40px;
-    border: 4px solid black;
+    border: 4px solid white;
     font-size: 30px;
     cursor: pointer;
-}
+} */

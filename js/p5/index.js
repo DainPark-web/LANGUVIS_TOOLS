@@ -70,7 +70,7 @@ const colors = [
 
 let time = 0;
 
-const textCount = 50;
+const textCount = 60;
 let textList = [];
 
 function setup(){
@@ -96,8 +96,8 @@ function setup(){
 
 function draw(){
     time += 0.5;
+    
     background(10,10,10)
-   
     for(let i = 0; i < textCount; i++){
         textList[i].draw();
         textList[i].update();
@@ -142,4 +142,16 @@ function draw(){
         pop()
         
     }
+    push()
+    fill(0,0,0,70)
+    rect(0,0,width, height)
+    pop()
+   
+
+    push()
+        noFill();
+        stroke(255);
+        circle(mouseX, mouseY, 30)
+    pop();
+   
 }
