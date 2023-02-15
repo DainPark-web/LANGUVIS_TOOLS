@@ -111,6 +111,34 @@
 }
 
 
+button{
+    font-size:20px;
+    color: white;
+    background: rgb(10,10,10);
+    padding: 10px 20px;
+    border: 3px solid white;
+}
+
+button:enabled{
+    background: rgb(10,10,10);
+    cursor: pointer;
+}
+button:enabled:hover{
+    background: white;
+    color:rgb(10,10,10);
+
+}
+
+button:active{
+    background: white;
+}
+
+button:disabled{
+    background: rgb(10,10,10);
+    opacity: 0.5;
+}
+
+
 /* page3 */
 
 .canvasContainert{

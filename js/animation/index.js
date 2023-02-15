@@ -18,7 +18,8 @@ tl.from(".home-nav-a", {opacity: 0, duraition: 1.5,ease: "Power3.easeOut" }, 1.8
 
 const a1 = document.querySelector(".home-a-event")
 const a2 = document.querySelector(".home-a-event2")
-const a3 = document.querySelector(".home-a-event3")
+const a3 = document.querySelector(".home-nav-a")
+
 
 const cFn = (url) => {
     tl.reverse(2.5)
@@ -35,5 +36,5 @@ a2.addEventListener("click", () => {
     cFn("./pages/tools/02.html")
 })
 a3.addEventListener("click", () => {
-    cFn("./pages/tools/03.html")
+    cFn("./pages/about.html")
 })

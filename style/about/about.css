@@ -1,0 +1,18 @@
+.aboutContainer{
+    width: 100vw;
+    height:100vh;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.canvasContainers{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    /* background-color: re d; */
+    z-index: -1;
+}
