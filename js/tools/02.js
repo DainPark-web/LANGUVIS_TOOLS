@@ -11,6 +11,7 @@ const volBar = {
 }
 
 let button;
+let start = false;
 function setup(){
     const cnv = createCanvas(WIDTH, HEIGHT);
     cnv.parent(container);
@@ -26,11 +27,20 @@ function draw(){
     let vol = mic.getLevel();
     let vMap = map(vol, 0, 1, 3, 500);
     
-    if(frameCount % ((3 * 1)) === 0){
-        rect((time * (volBar.w + 4)) + 50, 250 - vMap/2, volBar.w, vMap);
-        time += 1;
-    
+    if(start){
+
+        if(frameCount % ((3 * 1)) === 0 && ((time * (volBar.w + 4)) + 50) < WIDTH - 50){
+            rect((time * (volBar.w + 4)) + 50, 250 - vMap/2, volBar.w, vMap);
+            time += 1;
+        
+        }
+        if(((time * (volBar.w + 4)) + 50) > WIDTH - 50){
+            start = false;
+            time = 0;
+            
+        }
     }
+   
     button = createButton('Start');
     
     button.position(window.innerWidth/2, window.innerHeight- 50);
@@ -39,6 +49,8 @@ function draw(){
 }
 
 function playFn(){
-    console.log("s")
+
+    background(10,10,100)
     mic.start();
+    start = true;
 }   
