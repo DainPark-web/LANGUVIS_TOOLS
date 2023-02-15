@@ -102,3 +102,10 @@
     display: flex;
     gap: 10px;
 }
+
+/* page2 */
+
+.canvasContainer{
+    height: 500px;
+    background-color: red;
+}
