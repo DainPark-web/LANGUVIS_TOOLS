@@ -14,6 +14,8 @@ let button;
 let start = false;
 let start2 = false;
 
+let maxVolume = 0;
+let totalVolume = 0;
 
 function setup(){
     const cnv = createCanvas(WIDTH, HEIGHT);
@@ -36,20 +38,25 @@ function draw(){
     if(start2){
 
         if(frameCount % ((3 * 1)) === 0 && ((time * (volBar.w + 4)) + 50) < WIDTH - 50){
+            maxVolume = maxVolume < vMap ? vMap : maxVolume;
             rect((time * (volBar.w + 4)) + 50, 250 - vMap/2, volBar.w, vMap);
             time += 1;
-         
+            totalVolume += vMap;
 
         
         }
         if(((time * (volBar.w + 4)) + 50) > WIDTH - 50){
+            console.log(maxVolume + "max")
+            fill(255)
+            text(`Max volume: ${floor(maxVolume)}`, 10, 30);
+            text(`Average volume: ${floor(totalVolume/101)}`, 10, 60);
             start = false;
             start2 = false;
             time = 0;
             button.removeAttribute('disabled');
             button.html("Start")
-         
-            
+            maxVolume = 0;
+            totalVolume = 0;
             
             
         }
