@@ -28,8 +28,8 @@ function draw(){
    
     background(10,10,10)
     fill(255)
-    textSize(60)
-    text("VISULANG", mouseX - 130, mouseY + 30)
+    textSize(window.innerWidth <= 450 ? 30 : 60)
+    text("VISULANG", mouseX - (window.innerWidth <= 450 ? 60 : 130), mouseY + (window.innerWidth <= 450 ? 10 : 30))
 
     ball1.draw()
     ball1.update()

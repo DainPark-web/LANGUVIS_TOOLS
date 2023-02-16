@@ -25,7 +25,7 @@ class Ball {
     update(){
 
 
-        if(abs(mouseX - this.x) > 100 || abs(mouseY - this.y > 100)){
+        if(abs(mouseX - this.x) > window.innerWidth <= 450 ? 40 : 100 || abs(mouseY - this.y > window.innerWidth <= 450 ? 40 : 100)){
             if(mouseX > this.x){
                 this.xS = (mouseX - this.x) * this.f;
                 
