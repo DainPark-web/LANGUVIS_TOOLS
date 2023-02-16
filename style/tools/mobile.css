@@ -1,0 +1,55 @@
+.tool-container{
+    width: 100vw;
+    min-height: 100vh;
+    color: white;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+
+}
+
+.tool-main-title{
+    text-align: center;
+    padding: 20px;
+    padding-top: 50px;
+    font-size: 30px;
+}
+
+.tool-textArea{
+    min-height: 50vw;
+    padding: 10px;
+    
+
+}
+
+.tool-result{
+    min-height: 50vw;
+    padding: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.tool-result-wrapper{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+}
+
+.tool-result-wrapper > div{
+    display: flex;
+    gap: 10px;
+  
+}
+
+#tool1-button-wrapper{
+  
+    justify-content: center;
+  
+    background-color: white;
+    color: rgb(10,10,10);
+
+}
