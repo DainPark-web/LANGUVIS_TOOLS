@@ -3,6 +3,7 @@
 @import "./main.css";
 @import "../footer.css";
 
+
 .home-container{
     width: 100vw;
     background-color: var(--home-background);

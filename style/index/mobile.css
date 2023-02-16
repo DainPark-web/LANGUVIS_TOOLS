@@ -1,0 +1,15 @@
+.home-title > div:first-child{
+    font-size: 30px;
+    
+}
+
+
+.home-title > div:nth-child(2){
+    font-size: 14px;
+}
+
+.home-a {
+    font-size: 14px;
+}
+
+
