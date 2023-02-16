@@ -112,11 +112,12 @@
 
 .canvasContainer{
     height: 500px;
-    background-color: red;
+    background-color: rgb(10,10,10);
 }
 
 
 button{
+   
     font-size:20px;
     color: white;
     background: rgb(10,10,10);

@@ -26,7 +26,7 @@ function setup(){
     background(10,10,10)
     // mic.start();
     button = createButton('Start');
-    button.position(100, container.offsetTop + container.clientHeight + 30);
+    button.position(window.innerWidth <= 450 ? 20 : 100, container.offsetTop + container.clientHeight + 30);
     button.mousePressed(playFn);
 }
 

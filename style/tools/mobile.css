@@ -59,3 +59,13 @@
     padding: 10px 20px;
     text-align: center;
 }
+
+.canvasContainer{
+    height: 300px;
+    background-color: rgb(10,10,10);
+}
+
+button{
+    width: calc(100% - 40px);
+   
+}
